@@ -22,7 +22,7 @@
     <!--The following properties are resolve paths for the referenced dlls that use LC for licensing.
         Add as many as you require and add them to the end of the Exec Command property,
         Or use BLCResolvePath1 for all of them and seperate each directory with a comma, NO SPACES-->
-    <BLCResolvePath1>"$(SolutionDir)dependencies\C1\Winforms\","$(SolutionDir)dependencies\C1\WPF\"</BLCResolvePath1>
+    <BLCResolvePath1>"$(SolutionDir)dependencies\"</BLCResolvePath1>
   </PropertyGroup>
 
 
