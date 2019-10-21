@@ -39,5 +39,9 @@ Anywhere inside the Project node of the .csproj, add:
 You will need to adjust the relative path according to how deep your project is in your folder structure.
 
 ### That's it!
-BetterLC is a framework-independent "R2R" .NET Core 3.0 application, meaning you do not need to install another SDK if you aren't already using Core. 
+BetterLC is a framework-dependent "R2R" .NET Core 3.0 application, meaning you will need the .NET Core 3.0 SDK installed. 
 If you follow the instructions above, you _should_ have no issues!
+
+
+### Sidenotes
+You can build a self-contained version if you want, just "publish" the BetterLC project and choose "Release (x86) SC". Be warned, the size is large if you do this, and I'd assume that it might be quite sluggish.
