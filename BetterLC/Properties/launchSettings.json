@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BetterLC": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\v10.0A\\bin\\NETFX 4.7.2 Tools\\lc.exe\",\"Cubus.dll\",\"D:\\repos\\cubus\\Licenses\\Cubus.licx\",\"D:\\repos\\cubus\\Host\\host\\CubusHost\\obj\\Debug\\\",\"AnyCPU\",\"D:\\repos\\cubus\\dependencies\\C1\\Winforms\\\",\"D:\\repos\\cubus\\dependencies\\C1\\WPF\\\""
+    }
+  }
+}

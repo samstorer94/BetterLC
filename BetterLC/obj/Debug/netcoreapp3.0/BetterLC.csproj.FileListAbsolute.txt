@@ -1,0 +1,11 @@
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.exe
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.deps.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.runtimeconfig.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.runtimeconfig.dev.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.dll
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Debug\netcoreapp3.0\BetterLC.pdb
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Debug\netcoreapp3.0\BetterLC.AssemblyInfoInputs.cache
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Debug\netcoreapp3.0\BetterLC.AssemblyInfo.cs
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Debug\netcoreapp3.0\BetterLC.dll
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Debug\netcoreapp3.0\BetterLC.pdb
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Debug\netcoreapp3.0\BetterLC.csprojAssemblyReference.cache

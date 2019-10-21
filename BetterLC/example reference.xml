@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <!---Cut and paste from START to END into your .csproj-->
+
+
+  <!--START: BetterLC Task-->
+  <PropertyGroup Label="BetterLCVars">
+    <!--Change this to the location you put betterLC in.
+        I recommend making this part of your solution for CI/CD-->
+    <BLCPath>"$(SolutionDir)Build Tools\betterLC.exe"</BLCPath>
+
+    <!---Change this to match your SDK folder-->
+    <BLCToolPathLC>"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.7.2 Tools\lc.exe"</BLCToolPathLC>
+
+    <!---Change to .exe/.dll depending on the projects output configuration-->
+    <BLCTarget>"$(AssemblyName).dll"</BLCTarget>
+
+    <!---Change this to match your licenses folder. Makes sure your .licx name
+         is the same as the ASSEMBLY NAME, not the project name.-->
+    <BLCLicxFile>"$(SolutionDir)Licenses\$(AssemblyName).licx"</BLCLicxFile>
+
+    <BLCOutDir>"$(MSBuildProjectDirectory)\$(BaseIntermediateOutputPath)$(Configuration)\"</BLCOutDir>
+    <BLCArch>"$(Platform)"</BLCArch>
+    <!--The following properties are resolve paths for the referenced dlls that use LC for licensing.
+        Add as many as you require and add them to the end of the Exec Command property,
+        Or use BLCResolvePath1 for all of them and seperate each directory with a comma, NO SPACES-->
+    <BLCResolvePath1>"$(SolutionDir)dependencies\C1\Winforms\","$(SolutionDir)dependencies\C1\WPF\"</BLCResolvePath1>
+  </PropertyGroup>
+
+  <Target Name="BetterLC" AfterTargets="CompileLicxFiles" BeforeTargets="PrepareResources" Inputs="$(MSBuildAllProjects);@(_LicxFile);@(ReferencePath);@(ReferenceDependencyPaths)" Outputs="$(IntermediateOutputPath)$(TargetFileName).licenses">
+    <Message Text="BetterLC ($(ProjectName)): Starting..." Importance="High" />
+
+    <Exec Command="$(BLCPath) $(BLCToolPathLC),$(BLCTarget),$(BLCLicxFile),$(BLCOutDir),$(BLCArch),$(BLCResolvePath1)"
+          StandardErrorImportance="High"
+          StandardOutputImportance="High"
+          WorkingDirectory="$(ProjectDir)"
+          ContinueOnError="false">
+      <Output TaskParameter="Outputs" ItemName="CompiledLicenseFile"/>
+      <Output TaskParameter="Outputs" ItemName="FileWrites"/>
+    </Exec>
+  </Target>
+  <!--END: BetterLC Task-->
+</Project>

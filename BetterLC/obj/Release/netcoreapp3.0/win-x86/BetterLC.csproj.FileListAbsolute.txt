@@ -1,0 +1,10 @@
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.exe
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.deps.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.runtimeconfig.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.runtimeconfig.dev.json
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.dll
+C:\Users\Sam\source\repos\BetterLC\BetterLC\bin\Release\netcoreapp3.0\win-x86\BetterLC.pdb
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Release\netcoreapp3.0\win-x86\BetterLC.AssemblyInfoInputs.cache
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Release\netcoreapp3.0\win-x86\BetterLC.AssemblyInfo.cs
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Release\netcoreapp3.0\win-x86\BetterLC.dll
+C:\Users\Sam\source\repos\BetterLC\BetterLC\obj\Release\netcoreapp3.0\win-x86\BetterLC.pdb
