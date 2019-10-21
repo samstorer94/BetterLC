@@ -33,9 +33,9 @@ The licx files need to be named as "ASSEMBLY_NAME.licx", where assembly name is 
 ### Add References to BetterLC.targets 
 The final step is to add references to BetterLC.targets in each .csproj file that used to have a licx file. 
 Anywhere inside the Project node of the .csproj, add:
-
+```xml
   <Import Project="..\Build Tools\BetterLC.targets"/>
-  
+```
 You will need to adjust the relative path according to how deep your project is in your folder structure.
 
 ### That's it!
